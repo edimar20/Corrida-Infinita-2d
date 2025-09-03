@@ -219,15 +219,15 @@ document.addEventListener("keyup", (e) => {
 //  Geração de objetos
 setInterval(() => {
   if (jogoAtivo) criarObstaculo();
-}, 2000);
+}, 1000);
 
 setInterval(() => {
   if (jogoAtivo) criarMoeda();
-}, 6000);
+}, 1000);
 
 setInterval(() => {
   if (jogoAtivo) criarInimigo();
-}, 3500);
+}, 1000);
 
 //  Botão iniciar controla o começo do jogo
 document.getElementById("btnIniciar").addEventListener("click", () => {
@@ -237,3 +237,4 @@ document.getElementById("btnIniciar").addEventListener("click", () => {
     atualizar(); // inicia loop do jogo
   }
 });
+
